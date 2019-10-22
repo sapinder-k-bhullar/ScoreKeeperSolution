@@ -1,90 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+   <TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score Keeper App "
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="DuplicateIds" />
 
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        <TextView
+            android:id="@+id/team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A   "
+            tools:ignore="DuplicateIds" />
+        </TableRow>
     <TextView
-        android:id="@+id/title_textview"
+            android:id="@+id/text1value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    10  " />
+    <TableRow>
+    <Button
+        android:id="@+id/team1decreasebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_string"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
-
-    <TextView
-        android:id="@+id/teamA_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/teamA_title_string"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="112dp" />
-
-    <TextView
-        android:id="@+id/teamB_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/teamB_title_string"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="112dp" />
-
-    <TextView
-        android:id="@+id/teamA_score_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="186dp" />
-
-    <TextView
-        android:id="@+id/teamB_score_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:text="-" />
 
     <Button
-        android:id="@+id/decrease_TeamB_Button"
+        android:id="@+id/team2increasebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/decrease_string"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="362dp" />
+        android:text="+"
+        tools:ignore="DuplicateIds" /></TableRow>
 
-    <Button
+<TableRow
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+    >
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B" />
+        </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+
+        <TextView
+            android:id="@+id/team2value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     20  "
+            tools:ignore="DuplicateIds" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/team2decreasebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/team2increasebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            tools:ignore="DuplicateIds" /></TableRow>
+
+       <TableRow
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"
+           >
+
+
+
+
+    <RadioButton
         android:id="@+id/decrease_TeamA_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/decrease_string"
+        android:text="1"
         tools:layout_editor_absoluteX="39dp"
         tools:layout_editor_absoluteY="362dp" />
+       </TableRow>>
+           <TableRow
+               android:layout_height="wrap_content"
+               android:layout_width="fill_parent"
+               >
 
-    <Button
-        android:id="@+id/increase_TeamA_Button3"
-        android:layout_width="wrap_content"
+           <RadioButton
+
+            android:id="@+id/increase_TeamA_Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="267dp" />
+           </TableRow>
+
+    <TableRow
         android:layout_height="wrap_content"
-        android:text="@string/increase_string"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="267dp" />
+        android:layout_width="fill_parent"
+        >
 
-    <Button
-        android:id="@+id/increase_TeamB_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/increase_string"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="267dp" />
+        <RadioButton
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:id="@+id/increase_TeamA_Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="267dp"
+            tools:ignore="DuplicateIds" />
+    </TableRow>
+</TableLayout>
+
