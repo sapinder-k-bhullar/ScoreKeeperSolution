@@ -14,10 +14,12 @@
         >
         <TextView
             android:id="@+id/Heading"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/ScoreKeeperSolution"
             android:layout_height="wrap_content"
             android:text="Score Keeper App "
             android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
             tools:ignore="DuplicateIds" />
 
 
@@ -30,6 +32,7 @@
             android:id="@+id/team1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/teamA_title_string"
             android:text="Team A   "
             tools:ignore="DuplicateIds" />
         </TableRow>
@@ -49,6 +52,7 @@
         android:id="@+id/team2increasebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/increase_string"
         android:text="+"
         tools:ignore="DuplicateIds" /></TableRow>
 
@@ -61,6 +65,7 @@ android:layout_width="fill_parent"
         android:id="@+id/team2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/teamA_title_string"
         android:text="Team B" />
         </TableRow>
 
@@ -122,7 +127,7 @@ android:layout_width="fill_parent"
             android:text="2"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="267dp" />
-           
+
 
 
 

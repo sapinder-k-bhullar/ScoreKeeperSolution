@@ -1,11 +1,42 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:gravity">center</item>
     </style>
 
+    <style name="ScoreKeeperSolution" parent="TextAppearance.AppCompat.Large">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">35sp</item>
+
+    </style>
+
+    <style name="teamA_title_string">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:colorBackground">#E91E63</item>
+        <item name="android:background">#FFE91E63</item>
+
+    </style>
+    <style name="teamB_title_string">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:typeface">serif</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:colorBackground">#00FFFF</item>
+    </style>
+    <style name="increase_string">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:colorBackground">#FF673AB7</item>
+    </style>
 </resources>
+
